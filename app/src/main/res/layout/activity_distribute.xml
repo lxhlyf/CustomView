@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lyf="http://schemas.android.com/apk/res-auto">
+
+    <com.customview.distributeViewbyself.DistributeView
+        lyf:my_age="100"
+        lyf:my_name="刘亦菲"
+        lyf:my_bg="@drawable/jtx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout> 

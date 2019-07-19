@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img_meizi"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/lyfei33" />
+
+    <EditText
+        android:id="@+id/edit_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_meizi"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/edit_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_mul"
+        android:text="0" />
+
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/img_meizi"
+        android:layout_below="@id/img_meizi"
+        android:text="变化" />
+
+</RelativeLayout>

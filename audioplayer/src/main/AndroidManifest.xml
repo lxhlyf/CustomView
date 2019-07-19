@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.audioplayer">
+
+    <application>
+        <service
+            android:name=".PlayBackService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.audioplayer.ACTION.PLAY_TOGGLE"/>
+                <action android:name="com.audioplayer.ACTION.PLAY_NEXT"/>
+                <action android:name="com.audioplayer.ACTION.PLAY_LAST"/>
+                <action android:name="com.audioplayer.ACTION.STOP_SERVICE"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

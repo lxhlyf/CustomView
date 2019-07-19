@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="display1_color">#4a4a4a</color>
+    <color name="divider_color">#c4c4c4</color>
+    <color name="gray">#808080</color>
+    <color name="trans">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="txt_12">12sp</dimen>
+    <dimen name="txt_14">14sp</dimen>
+    <dimen name="txt_16">16sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
+    <string name="app_name">MusicPlayer</string>
+    <string name="cancel">取消</string>
+    <string name="label_next">下一首</string>
+    <string name="label_pause">暂停</string>
+    <string name="label_play">播放</string>
+    <string name="label_previous">上一首</string>
+    <string name="sure">确定</string>
+</resources>

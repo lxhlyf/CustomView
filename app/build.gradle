@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.customview"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+//        ndk{
+//            moduleName "Hello" //生成的.so的名字
+//            //abiFilters "armeabi","armeabi-v7a","x86"
+//        }
+    }
+
+    externalNativeBuild{
+        ndkBuild{
+            //path "src/main/jni/Android.mk"
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []//设置禁止gradle生成Android.mk
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+//    task ndkBuild(type: Exec) {//设置新的so的生成目录
+//        commandLine "D\\:\\android-ndk-r19-beta2\\ndk-build.cmd",
+//                'NDK_PROJECT_PATH=build/intermediates/ndk',
+//                'NDK_LIBS_OUT=libs',
+//                'APP_BUILD_SCRIPT=jni/Android.mk',
+//                'NDK_APPLICATION_MK=jni/Application.mk'
+//    }
+
+//    tasks.withType(JavaCompile) {
+//        compileTask -> compileTask.dependsOn ndkBuild
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    dataBinding{
+        
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation project(':audioplayer')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //glideimageview
+    implementation 'com.sunfusheng:glideimageview:1.0.0'
+    //PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.android.support:support-media-compat:27.1.1'
+    implementation project(':mediaBrowser')
+}

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="2dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <View
+                    android:id="@+id/view_default1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/menu_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default1"
+                    android:gravity="center"
+                    android:text="组合自定义" />
+
+                <Button
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menu_default"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="优酷菜单" />
+
+                <Button
+                    android:id="@+id/circle_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menu_default"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/menu"
+                    android:text="轮播图" />
+
+                <Button
+                    android:id="@+id/spanner_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/menu_default"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:text="下拉框" />
+
+                <View
+                    android:id="@+id/view_default2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/spanner_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/view_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default2"
+                    android:gravity="center"
+                    android:text="继承View" />
+
+                <Button
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="自定义开关" />
+
+                <Button
+                    android:id="@+id/contacts_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/switch_btn"
+                    android:layout_alignStart="@+id/circle_image"
+                    android:layout_alignLeft="@+id/circle_image"
+                    android:layout_alignBottom="@+id/switch_btn"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginLeft="13dp"
+                    android:text="自定义联系人列表" />
+
+                <Button
+                    android:id="@+id/wave_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contacts_btn"
+                    android:layout_alignStart="@+id/switch_btn"
+                    android:layout_alignLeft="@+id/switch_btn"
+                    android:text="全版水波纹" />
+
+                <Button
+                    android:id="@+id/distribute_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contacts_btn"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/wave_others"
+                    android:text="自定义属性" />
+
+                <Button
+                    android:id="@+id/fireWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wave_others"
+                    android:layout_marginLeft="25dp"
+                    android:text="烟花效果" />
+
+                <Button
+                    android:id="@+id/defineTextList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/distribute_btn"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/fireWork"
+                    android:text="自定义TextView+ListView" />
+
+                <Button
+                    android:id="@+id/pedometerLikeQq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/defineTextList"
+                    android:layout_marginLeft="25dp"
+                    android:text="仿QQ运动步数进度效果" />
+
+                <Button
+                    android:id="@+id/loading_progress_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/defineTextList"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/pedometerLikeQq"
+                    android:text="LoadingProgress" />
+
+                <Button
+                    android:id="@+id/letter_side_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loading_progress_btn"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="LetterSlideBar" />
+
+                <View
+                    android:id="@+id/view_default3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/letter_side_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/viewGroup_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default3"
+                    android:gravity="center"
+                    android:text="继承viewGroup" />
+
+                <Button
+                    android:id="@+id/dispatch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewGroup_default"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="事件分发小案例" />
+
+                <Button
+                    android:id="@+id/imitate_view_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewGroup_default"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/dispatch_btn"
+                    android:text="自定义ViewPage" />
+
+                <Button
+                    android:id="@+id/slide_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imitate_view_page"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="侧滑可删除ListView" />
+
+                <Button
+                    android:id="@+id/stagger_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slide_btn"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="流式布局" />
+
+                <Button
+                    android:id="@+id/slide_menu_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slide_btn"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/stagger_btn"
+                    android:text="侧滑菜单" />
+
+                <Button
+                    android:id="@+id/bottom_tab_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notification_btn"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@+id/slide_menu_btn"
+                    android:layout_toRightOf="@+id/slide_menu_btn"
+                    android:text="底部item" />
+
+                <View
+                    android:id="@+id/view_meadia"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/slide_menu_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/media_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_meadia"
+                    android:gravity="center"
+                    android:text="Service + Media" />
+
+                <Button
+                    android:id="@+id/service_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/media_tv"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="测试Service" />
+
+                <Button
+                    android:id="@+id/content_provider_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/service_btn"
+                    android:layout_alignEnd="@+id/spanner_btn"
+                    android:layout_alignRight="@+id/spanner_btn"
+                    android:layout_alignBottom="@+id/service_btn"
+                    android:text="content_provider" />
+
+                <Button
+                    android:id="@+id/notification_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/slide_btn"
+                    android:layout_alignBottom="@+id/slide_btn"
+                    android:layout_toEndOf="@+id/circle_image"
+                    android:layout_toRightOf="@+id/circle_image"
+                    android:text="notification" />
+
+
+                <Button
+                    android:id="@+id/music_player_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/service_btn"
+                    android:layout_alignLeft="@+id/service_btn"
+                    android:layout_marginTop="30dp"
+                    android:text="Music Player" />
+
+                <Button
+                    android:id="@+id/html_js_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/music_player_btn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/music_player_btn"
+                    android:text="Html And Js" />
+
+                <View
+                    android:id="@+id/view_default4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/html_js_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/text_splash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default4"
+                    android:gravity="center"
+                    android:text="引导页" />
+
+
+                <Button
+                    android:id="@+id/splash_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_splash"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="引导页" />
+
+                <View
+                    android:id="@+id/view_default5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/splash_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/text_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default5"
+                    android:gravity="center"
+                    android:text="照相机" />
+
+                <Button
+                    android:id="@+id/btn_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_camera"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="照相机" />
+
+                <Button
+                    android:id="@+id/cainiao_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_camera"
+                    android:layout_alignTop="@+id/btn_camera"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toEndOf="@+id/btn_camera"
+                    android:layout_toRightOf="@+id/btn_camera"
+                    android:text="菜鸟照相机" />
+
+                <Button
+                    android:id="@+id/defined_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_camera"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="自定义照相机" />
+
+                <Button
+                    android:id="@+id/neihan_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cainiao_camera"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/defined_camera"
+                    android:text="内涵段子照相机" />
+
+                <View
+                    android:id="@+id/view_default6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/neihan_camera"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/text_paint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default6"
+                    android:gravity="center"
+                    android:text="画笔" />
+
+                <Button
+                    android:id="@+id/paint_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_paint"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="画笔Paint" />
+
+                <Button
+                    android:id="@+id/color_matrix_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_paint"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/paint_btn"
+                    android:text="ColorMatrix" />
+
+                <Button
+                    android:id="@+id/matrix_three_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/color_matrix_btn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="ColorMatrixThreeMethod" />
+
+                <Button
+                    android:id="@+id/light_color_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/matrix_three_btn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="LightColorFilter" />
+
+                <View
+                    android:id="@+id/view_default7"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/light_color_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/text_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default7"
+                    android:gravity="center"
+                    android:text="继承自textView" />
+
+                <Button
+                    android:id="@+id/tab_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_text_view"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="自定义TabLayout" />
+
+                <View
+                    android:id="@+id/view_default8"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tab_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/canvas_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default8"
+                    android:gravity="center"
+                    android:text="画布" />
+
+                <Button
+                    android:id="@+id/canvas_three_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/canvas_view"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="CanvasApiThree" />
+
+                <View
+                    android:id="@+id/view_default9"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/canvas_three_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/mvvm_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default9"
+                    android:gravity="center"
+                    android:text="MVVM架构学习" />
+
+                <Button
+                    android:id="@+id/mvvm_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mvvm_text"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="MVVM架构学习" />
+
+                <View
+                    android:id="@+id/view_default10"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/mvvm_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/session_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default10"
+                    android:gravity="center"
+                    android:text="MVVM架构学习" />
+
+                <Button
+                    android:id="@+id/session_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/session_text"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="MediaSession" />
+
+                <View
+                    android:id="@+id/view_default11"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/session_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/ndk_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_default11"
+                    android:gravity="center"
+                    android:text="Ndk学习" />
+
+                <Button
+                    android:id="@+id/ndk_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ndk_text"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="ndk" />
+
+                <View
+                    android:id="@+id/view_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/ndk_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/game_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_game"
+                    android:gravity="center"
+                    android:text="游戏开发" />
+
+                <Button
+                    android:id="@+id/canvas_game_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/game_text"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="画布，矩阵" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

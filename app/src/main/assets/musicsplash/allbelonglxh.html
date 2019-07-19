@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>allBeLongLxh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background: url("img/backgroud.jpg") no-repeat;
+            /*保证图片填满网页*/
+            background-size: cover;
+            background-attachment: fixed;
+            /*perspective: 500px;*/
+            overflow: hidden;
+        }
+
+        ul {
+            width: 125px;
+            height: 125px;
+            /*background-color: pink;*/
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            margin-left: -115px;
+            transform-style: preserve-3d;
+            /*transform: rotateX(-10deg) ;*/
+            animation: rotate 10s linear 0s infinite normal;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+
+        ul li {
+            width: 125px;
+            height: 125px;
+            list-style: none;
+            font-size: 25px;
+            text-align: center;
+            background-color: black;
+            line-height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+       <!-- ul:hover {
+            animation-play-state: paused;
+        }-->
+
+      <!--  ul:hover li img {
+            opacity: 0.5;
+        }-->
+
+        <!--ul li:hover img {-->
+            <!--opacity: 1;-->
+            <!--transform: scale(1.2);-->
+        <!--}-->
+
+        ul li:nth-child(1) {
+            /*background-color: #7ccffc;*/
+            transform: rotateY(60deg) translateZ(200px);
+        }
+
+        ul li:nth-child(2) {
+            /*background-color: red;*/
+            transform: rotateY(120deg) translateZ(200px);
+        }
+
+        ul li:nth-child(3) {
+            /*background-color: purple;*/
+            transform: rotateY(180deg) translateZ(200px);
+        }
+
+        ul li:nth-child(4) {
+            /*background-color: green;*/
+            transform: rotateY(240deg) translateZ(200px);
+        }
+
+        ul li:nth-child(5) {
+            /*background-color: blue;*/
+            transform: rotateY(300deg) translateZ(200px);
+        }
+
+        ul li:nth-child(6) {
+            /*background-color: orangered;*/
+            transform: rotateY(360deg) translateZ(200px);
+        }
+
+        ul li img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .butterfly {
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            bottom: 80px;
+            right: 188px;
+            background-image: url("img/butterfly_f01.gif");
+            background-repeat: no-repeat;
+            background-position: 30px 100px;
+            animation: butterfly 6s linear 2s infinite normal;
+        }
+
+        <!--div:hover {-->
+            <!--animation-play-state: paused;-->
+            <!--transform: scale(1.5);-->
+        <!--}-->
+
+        @keyframes butterfly {
+            0% {
+                background-position: 30px 100px;
+            }
+            25% {
+                background-position: 0px -45px;
+            }
+
+            50% {
+                background-position: right top;
+            }
+            75% {
+                background-position: left bottom;
+            }
+            100% {
+                background-position: left 50%;
+            }
+        }
+
+          .entry_button {
+            position: absolute;
+            left: 50%;
+            bottom: 45px;
+            margin-left: -60px;
+            width: 100px;
+            height: 42px;
+            background-image: url(img/btn.png);
+            background-size: 100% 100%;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<ul>/
+    <li><img src="img/xh1.png" alt=""></li>
+    <li><img src="img/xh3.png" alt=""></li>
+    <li><img src="img/xh7.png" alt=""></li>
+    <li><img src="img/xh9.png" alt=""></li>
+    <li><img src="img/xh19.png" alt=""></li>
+    <li><img src="img/xh25.png" alt=""></li>
+</ul>
+
+<!--<img src="image/butterfly_f01.gif" class="butterfly">-->
+
+<audio src="music/xinji.mp3" autoplay="autoplay" loop="loop"></audio>
+
+<div id="butterfly" class="butterfly"></div>
+<div id="entry_button" class="entry_button"  onclick="startActivity()"></div>
+
+<script>
+
+     function startActivity(){
+          window.android.startActivity();
+     }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray">#bdbdbd</color>
+    <color name="orange">#f27242</color>
+    <color name="placeholder_color">#1A000000</color>
+    <color name="translucent">#aa000000</color>
+    <color name="transparent90_white">#E5ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00ff99</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <color name="media_choose_op_btn_disabled">#ffffffff</color>
+    <color name="media_choose_op_btn_enabled">#ffff819f</color>
+
+    <color name="notification_bg">#e91e63</color>
+</resources>
