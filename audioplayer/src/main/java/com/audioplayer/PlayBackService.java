@@ -1,6 +1,8 @@
 package com.audioplayer;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
@@ -112,6 +114,13 @@ public class PlayBackService extends Service implements IPlayBack, IPlayBack.Cal
         intent.setClassName("com.customview", "com.customview.musicplayer.MusicPlayerActivity");
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        NotificationChannel notificationChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            notificationChannel = new NotificationChannel("service", "service", NotificationManager.IMPORTANCE_HIGH);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
 
         // Set the info for the views that show in the notification panel.
         Notification notification = new NotificationCompat.Builder(this, "service")

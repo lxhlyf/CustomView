@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.customview.FireWork.FireWorkActivity;
 import com.customview.SlideMenu.SlideActivity;
 import com.customview.androidgame.CanvasGameActivity;
+import com.customview.bitmap.ThumbnailActivity;
 import com.customview.bottomtab.simple3.TabActivity;
 import com.customview.lettercontacts.LetterActivity;
 import com.customview.loadingView.LoadingViewActivity;
@@ -133,6 +134,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     Button bottomTabBtn;
     @BindView(R.id.canvas_game_btn)
     Button canvasGameBtn;
+    @BindView(R.id.thumbnail_btn)
+    Button mThumbnailBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +181,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         ndkBtn.setOnClickListener(this);
         bottomTabBtn.setOnClickListener(this);
         canvasGameBtn.setOnClickListener(this);
+        mThumbnailBtn.setOnClickListener(this);
     }
 
     @Override
@@ -204,11 +208,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, DistributeActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.imitate_view_page: //仿ViewPage
+            case R.id.imitate_view_page: //自定义 仿ViewPage
                 intent = new Intent(this, ImitateViewPageActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.dispatch_btn:  //事件分发小案例
+            case R.id.dispatch_btn:  //listview的 事件分发小案例
                 intent = new Intent(this, DispatchActivity.class);
                 startActivity(intent);
                 break;
@@ -221,6 +225,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.wave_others:  //全版水波纹
+                // TODO: 2020/9/5 看一下实现
                 intent = new Intent(this, WaveActivity.class);
                 startActivity(intent);
                 break;
@@ -229,6 +234,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.content_provider_btn:  // 对ContentProvider 的学习
+                // TODO: 2020/9/5 知识有点落伍的
                 intent = new Intent(this, ContentProviderActivity.class);
                 startActivity(intent);
                 break;
@@ -248,7 +254,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, SplashActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.btn_camera: //引导页
+            case R.id.btn_camera: //
+                // TODO: 2020/9/5  10以上需要 使用 filrprovider
                 intent = new Intent(this, CameraActivity.class);
                 startActivity(intent);
                 break;
@@ -264,15 +271,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, TestImageActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.fireWork: //引导页
+            case R.id.fireWork: //烟花效果
                 intent = new Intent(this, FireWorkActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.defineTextList: //引导页
+            case R.id.defineTextList: //自定义TextView+ListView
                 intent = new Intent(this, TextViewActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.pedometerLikeQq: //引导页
+            case R.id.pedometerLikeQq: //仿QQ运动步数进度效果
                 intent = new Intent(this, PedometerActivity.class);
                 startActivity(intent);
                 break;
@@ -280,7 +287,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, PaintTestActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.tab_btn: //引导页
+            case R.id.tab_btn: //自定义tabLayout
                 intent = new Intent(this, ViewPagerTabActivity.class);
                 startActivity(intent);
                 break;
@@ -300,27 +307,27 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, CanvasAPIThreeActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.loading_progress_btn: //引导页
+            case R.id.loading_progress_btn: //LoadingProgress
                 intent = new Intent(this, LoadingViewActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.letter_side_btn: //引导页
+            case R.id.letter_side_btn: //联系人列表
                 intent = new Intent(this, LetterActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.stagger_btn: //引导页
+            case R.id.stagger_btn: //流式布局
                 intent = new Intent(this, TagActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.slide_menu_btn: //引导页
+            case R.id.slide_menu_btn: //测滑菜单
                 intent = new Intent(this, SlideActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.mvvm_btn: //引导页
+            case R.id.mvvm_btn: // mvvm
                 intent = new Intent(this, MvvmActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.session_btn: //引导页
+            case R.id.session_btn: //  MediaSession
                 intent = new Intent(this, com.customview.musicplayer.mediasession.LocalAudioActivity.class);
                 startActivity(intent);
                 break;
@@ -328,12 +335,16 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, NdkActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.bottom_tab_btn:
+            case R.id.bottom_tab_btn: //底部导航栏
                 intent = new Intent(this, TabActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.canvas_game_btn:
+            case R.id.canvas_game_btn:  //画布矩阵
                 intent = new Intent(this, CanvasGameActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.thumbnail_btn:  //获取缩略图
+                intent = new Intent(this, ThumbnailActivity.class);
                 startActivity(intent);
                 break;
         }

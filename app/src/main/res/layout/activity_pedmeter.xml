@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.customview.pedometerLikeqq.PedometerActivity">
 
-    <com.hc.view_day03.QQStepView
+    <com.customview.pedometerLikeqq.QQStepView
         android:id="@+id/step_view"
         app:outerColor="@color/colorPrimary"
         app:innerColor="@color/colorAccent"

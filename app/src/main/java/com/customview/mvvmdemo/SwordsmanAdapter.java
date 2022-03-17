@@ -33,7 +33,7 @@ public class SwordsmanAdapter extends RecyclerView.Adapter<SwordsmanAdapter.Swor
     @NonNull
     @Override
     public SwordsmanViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemMvvmRecyclerBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_mvvm_recycler,parent, false);
+        ItemMvvmRecyclerBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_mvvm_recycler, parent, false);
         return new SwordsmanViewHolder(binding);
     }
 

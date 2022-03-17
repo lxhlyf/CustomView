@@ -1,63 +1,63 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:4:5-37
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:4:5-37
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:6:5-79
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:7:5-24:19
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:7:5-24:19
 service#com.mediabrowser.xiaxl.service.MusicService
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:11:9-15:19
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:11:9-15:19
 	android:name
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:11:18-76
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:11:18-76
 intent-filter#action:name:android.media.browse.MediaBrowserService
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:12:13-14:29
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:12:13-14:29
 action#android.media.browse.MediaBrowserService
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:13:17-83
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:13:17-83
 	android:name
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:13:25-80
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:13:25-80
 receiver#android.support.v4.media.session.MediaButtonReceiver
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:18:9-22:20
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:18:9-22:20
 	android:name
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:18:19-86
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:18:19-86
 intent-filter#action:name:android.intent.action.MEDIA_BUTTON
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:19:13-21:29
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:19:13-21:29
 action#android.intent.action.MEDIA_BUTTON
-ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:20:17-77
+ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml:20:25-74
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml:20:25-74
 uses-sdk
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		ADDED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
-		INJECTED from D:\MyFilesAboutAndroid\CustomView\mediaBrowser\src\main\AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		ADDED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml
+		INJECTED from /Users/jy/workspace/android_projects/my_self_projects/CustomView/mediaBrowser/src/main/AndroidManifest.xml

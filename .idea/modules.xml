@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomView-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomView-app.iml" group="CustomView/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/audioplayer/CustomView-audioplayer.iml" filepath="$PROJECT_DIR$/.idea/modules/audioplayer/CustomView-audioplayer.iml" group="CustomView/audioplayer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mediaBrowser/CustomView-mediaBrowser.iml" filepath="$PROJECT_DIR$/.idea/modules/mediaBrowser/CustomView-mediaBrowser.iml" group="CustomView/mediaBrowser" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/audioplayer/audioplayer.iml" filepath="$PROJECT_DIR$/audioplayer/audioplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaBrowser/mediaBrowser.iml" filepath="$PROJECT_DIR$/mediaBrowser/mediaBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my_self_projects-CustomView.iml" filepath="$PROJECT_DIR$/.idea/modules/my_self_projects-CustomView.iml" group="CustomView" />
     </modules>
   </component>
 </project>

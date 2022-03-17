@@ -15,6 +15,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.customview.R;
+import com.customview.utils.SystemUtils;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class ContentProviderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_provider);
-
+        SystemUtils.isGrantExternalRW(this);
         queryContact("queryContact");
     }
 

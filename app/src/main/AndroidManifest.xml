@@ -15,6 +15,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
     <application
         android:name=".app.MyApp"
         android:allowBackup="true"
@@ -72,7 +74,8 @@
 
         <activity android:name=".contentprovider.ContentProviderActivity" />
         <activity android:name=".notification.NotificationActivity"/>
-        <activity android:name=".musicplayer.MusicPlayerActivity">
+        <activity android:name=".musicplayer.MusicPlayerActivity"
+            android:launchMode="singleTask">
 
             <intent-filter>
                 <action android:name="com.customview.MUSICMAIN" />
@@ -131,6 +134,7 @@
         <activity android:name=".ndk.NdkActivity"/>
         <activity android:name=".bottomtab.simple3.TabActivity" />
         <activity android:name=".androidgame.CanvasGameActivity"/>
+        <activity android:name=".bitmap.ThumbnailActivity"/>
     </application>
 
 </manifest>

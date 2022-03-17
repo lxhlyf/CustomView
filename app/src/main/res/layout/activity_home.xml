@@ -12,7 +12,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -153,7 +154,7 @@
                     android:layout_below="@+id/defineTextList"
                     android:layout_marginLeft="30dp"
                     android:layout_toRightOf="@+id/pedometerLikeQq"
-                    android:text="LoadingProgress" />
+                    android:text="加载进度条，三角圆的切换" />
 
                 <Button
                     android:id="@+id/letter_side_btn"
@@ -162,7 +163,7 @@
                     android:layout_below="@+id/loading_progress_btn"
                     android:layout_marginStart="25dp"
                     android:layout_marginLeft="25dp"
-                    android:text="LetterSlideBar" />
+                    android:text="字母联系人列表" />
 
                 <View
                     android:id="@+id/view_default3"
@@ -603,6 +604,41 @@
                     android:text="画布，矩阵" />
 
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/ndk_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/black" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="视频封面，解码"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/thumbnail_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="获取封面"
+                    app:layout_constraintTop_toBottomOf="@+id/text"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

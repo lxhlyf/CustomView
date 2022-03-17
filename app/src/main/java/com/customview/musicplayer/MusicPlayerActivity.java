@@ -354,7 +354,9 @@ public class MusicPlayerActivity extends AppCompatActivity implements IPlayBack.
         textViewProgress.setText(MyTimeUtils.formatDuration(progress));
     }
     private void updateDuration() {
-        textViewDuration.setText(MyTimeUtils.formatDuration(service.getDuration()));
+        if (textViewDuration != null) {
+            textViewDuration.setText(MyTimeUtils.formatDuration(service.getDuration()));
+        }
     }
 
 }
